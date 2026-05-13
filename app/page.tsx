@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const slides = [
   "Digital Marketer",
@@ -23,7 +24,8 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100 flex flex-col">
       {/* Top Carousel Section */}
-      <section className="h-1/2 overflow-hidden bg-black text-white flex items-center">
+      <section className="h-2/3 overflow-hidden bg-black text-white flex flex-col items-center justify-center">
+      {/* Carousel */}
         <div className="whitespace-nowrap animate-scroll text-5xl font-semibold">
           <span className="mx-12">University of California San Diego</span>
           <span className="mx-12">Designer</span>
@@ -31,6 +33,17 @@ export default function Home() {
           <span className="mx-12">Creative</span>
           <span className="mx-12">Digital Marketer</span>
           <span className="mx-12">Brand Strategist</span>
+        </div>
+      </section>
+
+      {/* Image */}
+      <section>
+        <div className="w-6/7 flex justify-end items-start pr-10 pt-10">
+          <img
+            src="/image.jpg"
+            alt="My Photo"
+            className="w-130 h-150 object-cover rounded-xl"
+          />
         </div>
       </section>
 
@@ -52,11 +65,17 @@ export default function Home() {
               About
             </Link>
 
+            <Link
+              href="/projects" 
+              className="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-500 transition">
+              Projects
+            </Link>
+
             <a
               href="https://github.com/jasonyasuda/PORTOFLIO"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-800 px-6 py-3 rounded-lg hover:bg-gray-500 transition"
+              className="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-500 transition"
             >
               GitHub
             </a>

@@ -36,7 +36,7 @@ export default function About() {
             href="/"
             className="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-500 transition"
           >
-            Back Home
+            Home
           </Link>
         </div>
       </section>
